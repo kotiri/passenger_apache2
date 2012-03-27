@@ -41,6 +41,6 @@ template "#{node['apache']['dir']}/mods-available/passenger.conf" do
   mode "644"
 end
 
-apache_module "passenger" do
+apache2_module "passenger" do
   module_path node['passenger']['module_path']
 end
